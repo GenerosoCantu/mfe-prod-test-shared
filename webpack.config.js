@@ -5,7 +5,7 @@ module.exports = (_, argv) => ({
   output: {
     publicPath:
       argv.mode === "development"
-        ? "http://localhost:8080/"
+        ? "http://localhost:8100/"
         : "https://mfe-prod-test-shared.vercel.app/",
   },
 
@@ -14,7 +14,7 @@ module.exports = (_, argv) => ({
   },
 
   devServer: {
-    port: 8080,
+    port: 8100,
   },
 
   module: {
@@ -35,7 +35,7 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "header",
+      name: "shared",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
