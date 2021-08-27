@@ -8,9 +8,9 @@ import "./index.css";
 
 const App = () => (
   <div>
+    <div>Shared</div>
     <Header />
     <Menu />
-    <div>I'm the header app</div>
     <Footer />
   </div>
 );
