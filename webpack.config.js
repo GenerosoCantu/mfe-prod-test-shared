@@ -40,6 +40,8 @@ module.exports = (_, argv) => ({
       remotes: {},
       exposes: {
         "./Header": "./src/Header",
+        "./Footer": "./src/Footer",
+        "./Menu": "./src/Menu",
       },
       shared: require("./package.json").dependencies,
     }),
